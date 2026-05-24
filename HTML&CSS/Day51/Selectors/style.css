@@ -1,0 +1,35 @@
+/* div p{
+    border: 2px solid black;
+}
+
+main + p{
+    border: 2px solid black;
+} */
+
+#box{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    background-color: bisque;
+}
+
+#box:hover{
+    background-color: chartreuse;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 100px;
+}
+
+
+#box1{
+    /* background-color: blue; */
+    width: 200px;
+    border-radius: 20px;
+}
+
+#box1:focus{
+    width: 150;
+    border-radius: 30px;
+    border: 2px solid green;
+}
+

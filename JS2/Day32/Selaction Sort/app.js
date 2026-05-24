@@ -11,6 +11,7 @@ for (let i = 0; i < arr.length; i++)
             minidx = j
         }
     }
+
     if(i != minidx)
     {
         let temp = arr[minidx]
@@ -18,5 +19,4 @@ for (let i = 0; i < arr.length; i++)
         arr[i] = temp
     }
 }
-
 console.log(arr)

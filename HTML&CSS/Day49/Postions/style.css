@@ -1,0 +1,38 @@
+.parent{
+    border: 1px solid black;
+    display: flex;
+    width: fit-content;
+    margin-bottom: 100px;
+}
+
+.child{
+    width: 200px;
+    height: 200px;
+}
+
+#a{
+    position: static;
+    top: 100px;
+}
+
+#b{
+    position: relative;
+    bottom: 50px;
+}
+
+#c{
+    position: absolute;
+    right: 100px;
+}
+
+#d{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+
+#e{
+    position: sticky;
+    top: 20px;
+    left: 10px;
+}

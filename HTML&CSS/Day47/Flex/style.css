@@ -1,0 +1,45 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+#parent{
+    border: 5px solid blue;
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+}
+
+img{
+    height: 50px;
+    margin-left: 10px;
+}
+
+#side{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.main{
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    border-radius: 20px;
+    width: 500px;
+    height: 30px;
+    padding: 0px 20px;
+    border: none;
+    
+}
+
+h1{
+    padding-bottom: 20px;
+}
+

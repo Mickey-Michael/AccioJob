@@ -1,0 +1,12 @@
+div{
+    background-color: chartreuse;
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-align: center;
+    line-height: 130px;
+    word-spacing: 50px;
+    letter-spacing: 30px;
+}
