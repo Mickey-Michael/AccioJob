@@ -141,16 +141,13 @@
                 let currentLine = lyrics[index];
                 index++;
 
-                // YAHAN BREAK LOGIC HAI:
-                // Agar "Sorry, Sorry कह तनी......😊" wali line aayi hai, toh 4 second ruko
                 if (currentLine === "Sorry, Sorry कह तनी.....😊") {
-                    setTimeout(showNextLine, 4000); // 4 second ka gap
+                    setTimeout(showNextLine, 4000); 
                 } else {
-                    setTimeout(showNextLine, 2500); // Baki lines ke liye 2.5 second ka gap
+                    setTimeout(showNextLine, 2500);
                 }
 
             } else {
-                // End mein SORRY dikhana
                 setTimeout(() => {
                     const sorryDiv = document.createElement('div');
                     sorryDiv.className = 'sorry-text';

@@ -8,7 +8,7 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #111; /* डार्क थीम ताकि दिल ज्यादा चमके */
+            background-color: #111;
             color: white;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
@@ -27,7 +27,6 @@
             margin-bottom: 30px;
         }
 
-        /* दिल धड़कने का एनिमेशन */
         @keyframes beat {
             0% { transform: scale(1); }
             100% { transform: scale(1.15); }
@@ -48,7 +47,7 @@
             margin-top: 20px;
             opacity: 0;
             transform: scale(0.5);
-            animation: popUp 2s forwards 4s; /* यह मैसेज 4 सेकंड बाद आएगा */
+            animation: popUp 2s forwards 4s;
             text-shadow: 0 0 10px #ff9999;
         }
 
@@ -68,20 +67,17 @@
 
     <script>
         const textElement = document.getElementById('text');
-        // आप यहाँ अपनी पसंद की कोई भी लाइन लिख सकते हैं
         const textToType = "Tum mere din ka sabse khoobsurat hissa ho..."; 
         let index = 0;
 
-        // टाइपिंग इफ़ेक्ट बनाने का लॉजिक
         function typeWriter() {
             if (index < textToType.length) {
                 textElement.innerHTML += textToType.charAt(index);
                 index++;
-                setTimeout(typeWriter, 100); // 100ms की स्पीड से अक्षर टाइप होंगे
+                setTimeout(typeWriter, 100);
             }
         }
 
-        // 1 सेकंड बाद टाइपिंग शुरू होगी
         setTimeout(typeWriter, 1000);
     </script>
 
