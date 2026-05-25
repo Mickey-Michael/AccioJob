@@ -1,0 +1,28 @@
+:root{
+    --navbar-bg-color:#f4b0b0;
+    --content-bg-color:red;
+}
+
+.abc{
+    --bg-color:#9bc2ea;
+}
+
+nav{
+    background-color: var(--navbar-bg-color);
+}
+
+#b1{
+    background-color: var(--content-bg-color);
+}
+
+#b2{
+    background-color: var(--content-bg-color);
+}
+
+#b3{
+    background-color: var(--content-bg-color);
+}
+
+.abc{
+    background-color: var(--bg-color);
+}

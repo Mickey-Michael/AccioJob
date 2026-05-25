@@ -1,0 +1,17 @@
+.moviePic{
+        height: 450px;
+        width: 300px;
+        opacity: 0.9;
+}
+
+.moviePic:hover{
+        opacity: 1.0;
+}
+
+.movieDetail{
+        position: absolute;
+        top: 65%;
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+}

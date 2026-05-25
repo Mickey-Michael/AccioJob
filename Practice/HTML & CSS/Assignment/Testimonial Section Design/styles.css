@@ -1,0 +1,16 @@
+#div1{
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.parent{
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 0px 15px;
+    margin-bottom: 20px;
+}
+
+.name{   
+    font-style: italic;
+    text-align: right;
+}
