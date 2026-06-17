@@ -3,17 +3,23 @@ const btnr = document.getElementById("rest")
 const btnp = document.getElementById("plus")
 const countbar = document.getElementById("count")
 
-var no = 0
 
 btnp.addEventListener("click" , () => {
-    countbar.innerText = Number(no++)
+    let no = Number(countbar.innerText)
+    no++
+    countbar.innerText = no
 })
 
 btnm.addEventListener("click" , () => {
-    countbar.innerText = Number(no--)
+    if(countbar.innerText == 0)
+    {
+        return
+    }
+    let no = Number(countbar.innerText)
+    no--
+    countbar.innerText = no
 })
 
 btnr.addEventListener("click" , () => {
-    countbar.innerText = Number(no = 0)
+    countbar.innerText = "0"
 })
-
