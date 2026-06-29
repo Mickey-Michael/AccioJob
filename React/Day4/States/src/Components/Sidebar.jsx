@@ -9,11 +9,16 @@ const Sidebar = () => {
            onMouseEnter={() => {
             setsbar(true)
            }}
-           style={{height : "100vh", width : "20vw", backgroundColor : "orange"}}>
+           onMouseLeave={() => {
+            setsbar(false)
+           }}
+           style={{height : "100vh", 
+                  width : sbar ? "20vw" : "5vw", 
+                  backgroundColor : "orange"
+            }}>
 
         </aside>
     )
 }
-
 
 export default Sidebar

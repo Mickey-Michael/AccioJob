@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="root">
+
+    </div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script>
+        const root = ReactDOM.createRoot(document.getElementById("root"))
+
+        let myDiv = React.createElement("div",{id : "qwert", style : {color : "red", backgroundColor : "pink"}} ,"Hello World")
+
+        let h1 = React.createElement("h1", {calssName : "ytrewq"}, "Mickey")
+
+        const p = React.createElement("p", null, "Hello Mickey")
+        const div = React.createElement("div", null, p)
+
+        const ul = React.createElement("ul", null, [
+            React.createElement("li", null, 1),
+            React.createElement("li", null, 2),
+            React.createElement("li", null, 4)
+        ])
+
+        root.render([h1, myDiv , div, ul])
+
+    </script>
+</body>
+</html>
