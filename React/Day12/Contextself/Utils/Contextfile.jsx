@@ -1,19 +1,13 @@
-import { useState } from "react";
-import { createContext, useContext } from "react";
+import { useState, createContext} from "react";
 
 
 export const Mycontext = createContext()
 
-export function ContextProviter({C})
+export function ContextProviter({children})
 {
-    const [Text , setText ] = useState([])
+    const [text , setText ] = useState([])
 
-    return <Mycontext.Provider value={Text ,setText}>
-        {C}
+    return <Mycontext.Provider value={{text ,setText}}>
+        {children}
     </Mycontext.Provider>
-}
-
-export function useinputContext()
-{
-    return useContext(Mycontext)
 }

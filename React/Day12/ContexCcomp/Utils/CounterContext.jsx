@@ -1,8 +1,14 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 
-const CounterContext = createContext()
+export const CounterContext = createContext()
 
-function CounterContextProvider()
+export function CounterContextProvider({children})
 {
-    
+
+    const [count , setCount] = useState(0)
+
+
+    return <CounterContext.Provider value={{count, setCount}}>
+        {children}
+    </CounterContext.Provider>
 }

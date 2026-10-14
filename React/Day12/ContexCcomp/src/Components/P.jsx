@@ -1,7 +1,12 @@
+import C from "./C"
+
 
 const P = () => {
   return (
-    <div>P</div>
+    <div>
+      
+      <C/>
+    </div>
   )
 }
 

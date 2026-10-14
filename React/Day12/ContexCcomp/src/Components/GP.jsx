@@ -1,7 +1,11 @@
+import P from "./P"
 
 const GP = () => {
   return (
-    <div>GP</div>
+    <div>
+      
+      <P/>
+    </div>
   )
 }
 
