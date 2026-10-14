@@ -9,7 +9,7 @@ let list = []
 // query
 // router.post("/create", (req, res) => {
 // body
-router.post("/create", (req, res) => {
+router.post("/", (req, res) => {
     try {
         // const { title, des } = req.params
         // const { title, des } = req.query
@@ -25,7 +25,7 @@ router.post("/create", (req, res) => {
         })
     } catch (error) {
         res.json({
-            er : message
+            er : error.message
         })
     }
 })

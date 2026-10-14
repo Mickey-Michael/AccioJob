@@ -2,10 +2,12 @@ import { Route, Routes } from "react-router-dom"
 import Navbar from "./Components/Navbar"
 import Home from "./Pages/Home"
 import New from "./Pages/New"
+import { Toaster } from "react-hot-toast"
 
 const App = () => {
   return (
     <div>
+      <Toaster/>
 
       <Navbar/>
 
