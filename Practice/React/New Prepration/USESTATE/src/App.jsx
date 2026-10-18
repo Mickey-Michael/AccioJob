@@ -1,30 +1,70 @@
-import Todo from "./Components/Todo"
-import Product from "./Components/Product"
-import Navbar from "./Components/Navbar"
-import Count from "./Components/Count"
-import { Route, Routes } from "react-router-dom"
 import { useState } from "react"
-import Cart from "./Components/Cart"
-
 
 const App = () => {
 
-  const [p, setP] = useState([])
-
-  console.log(p)
+  const [count, setCount] = useState(0)
+  const [text, setText] = useState("")
+  const [todo, setTodo] = useState([])
 
   return (
     <div>
+      <h1>{count}</h1>
 
-      <Navbar/>
+      <button onClick={() => {
+        setCount(prev => prev + 1)
+      }}>Increment</button>
+      <button onClick={() => {
+        setCount(0)
+      }}>Rest</button>
+      <button onClick={() => {
+        setCount(prev => Math.max(0, prev - 1))
+      }}>Decrement</button>
 
-      <Routes>
-        <Route path="/" element={<Count/>}/>
-        <Route path="/Todo" element={<Todo/>}/>
-        <Route path="/Product" element={<Product setP={setP}  />}/>
-        <Route path="/Cart" element={<Cart p={p}/>}/>
+      <div>
 
-      </Routes>
+        <input value={text} onChange={(e) => {
+          setText(e.target.value)
+        }} type="text" />
+
+        <button onClick={() => {
+          const aa = text.trim()
+          if(aa === "")
+          {
+            return
+          }
+
+          const obj = {
+            id : Date.now(),
+            value :aa
+          }
+          setTodo(prev => [...prev, obj])
+          setText("")
+        }}>Add</button>
+
+      </div>
+
+      <div>
+        <ul>
+          {
+            todo.map((item) => {
+              return (
+                
+                <li key={item.id}>
+                  <span>{item.value}</span>
+                  <button onClick={() => {
+                    setTodo(prev => prev.filter(aa => aa.id !== item.id))
+                  }}>Delete</button>
+                </li>
+              ) 
+            })
+          }        
+        </ul>
+      </div>
+      
+
+
+
+
     </div>
   )
 }

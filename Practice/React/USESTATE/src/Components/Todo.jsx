@@ -28,7 +28,14 @@ const Todo = () => {
         <div>
             <ul>
                 {todos.map((item, index) => (
+                    <>
                     <li key={index}>{item}</li>
+                    <button onClick={() => {
+                        
+                    }}>Delead</button>
+                    </>
+                    
+                    
                 ))}
             </ul>
         </div>
