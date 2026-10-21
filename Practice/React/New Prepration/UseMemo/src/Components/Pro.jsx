@@ -25,8 +25,6 @@ const Pro = () => {
 
       const matchCategory = category === "All" || item.category === category
 
-      console.log(matchName,matchCategory)
-
       return matchName && matchCategory
     })
   }, [value, category])
